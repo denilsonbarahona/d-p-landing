@@ -1,0 +1,58 @@
+:root{
+    font-size: 12px;
+    --primary: #6246ea; 
+    --secondary-1: #d1d1e9; 
+    --secondary: #112d57; 
+    --firsttext: #20262a; 
+    --lighttext: #ffffff; 
+    --secondtext: #5c5c5c; 
+    --darkbackground: #182333; 
+    --lightbackground: #ffffff; 
+    --headline: 700 4.5rem/4.875rem Inter; 
+    --secondheadline: 700 3.5rem/4.0625rem Inter; 
+    --title: 400 2.25rem/2.625rem Inter; 
+    --subheading: 400 1.5rem/2.375rem Inter; 
+    --button: 600 1.125rem/1.25rem Inter; 
+    --subtitle: 400 1.125rem/1.75rem Inter; 
+    --paragraphe: 400 1.1875rem/1.875rem Inter; 
+    --link: 400 1.125rem/1.25rem Inter; 
+    --mobilemenu: 400 1.125rem/1.25rem Inter; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--lightbackground);
+    font: var(--paragraphe);
+}
+
+@media screen and (min-width: 320px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    :root {
+        font-size: 24px;
+    }
+}

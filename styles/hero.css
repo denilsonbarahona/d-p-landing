@@ -1,0 +1,156 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    background: linear-gradient(180deg, 
+                rgba(255, 255, 255, 0.7) 7.62%, 
+                rgba(0, 225, 198, 0.5) 25.5%, 
+                #FFFFFF 70.92%);
+}
+
+.hero .hero-text {
+    position: relative;
+    z-index: 1;
+     color: var(--secondary); 
+}
+
+.hero .hero-text h1 {
+    font: var(--secondheadline);
+/*     font-size: 2.5rem;
+    line-height: 3rem; */
+}
+
+.hero .hero-text p {
+    font: var(--subheading);
+/*     font-size: 1rem;
+    line-height: 1.5rem; */
+}
+
+.hero-action { 
+    padding-inline: 3rem; 
+    margin-block: 3rem; 
+}
+
+.actions {  
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.hero-img { 
+   margin-inline: 2rem; 
+   max-inline-size: 100%;
+   max-block-size: 50rem;
+   overflow: hidden;
+   position: relative;
+   z-index: 1;
+}
+
+.hero-img img {
+   inline-size: 100%; 
+   block-size: 100%;
+   object-fit: cover;
+   vertical-align: middle;
+}
+
+.hero-text svg {
+    position: absolute;
+    inset-inline-start: 0;
+    inline-size: 39rem;
+    block-size: 39rem;
+    transform: translateX(-96%);
+    inset-block-start: 0; 
+    z-index: 0;
+}
+
+.hero-action svg {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    transform: translateX(0%) translateY(5%);
+    z-index: 0;
+    inline-size: 6.5rem;
+    block-size: 29rem; 
+}
+
+
+@media screen and (min-width: 425px) {
+    
+    .hero-action { 
+        padding-inline: 3.5rem; 
+        margin-block: 3rem; 
+    }
+    
+    .hero-text svg { 
+        transform: translateX(-92%); 
+    }
+
+    .hero-action svg {
+        transform: translateX(0%) translateY(30%);
+        inline-size: 10.5rem;
+        block-size: 31rem; 
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .hero-action { 
+        padding-inline: 10rem; 
+        margin-block: 4rem; 
+    }
+    
+    .hero-text svg { 
+        transform: translateX(-94%); 
+    }
+
+    .hero-action svg {
+        transform: translateX(0%) translateY(35%);
+        inline-size: 13.5rem;
+        block-size: 34rem; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .hero-action { 
+       padding-inline: 15rem; 
+       margin-block: 5rem; 
+    }
+    
+    .actions {
+        flex-direction: row;
+    }
+
+    
+    .hero-action svg {
+        transform: translateX(0%) translateY(35%);
+    }
+}
+
+@media screen and (min-width: 2560PX) {
+    /* 
+    .hero-action { 
+        padding-inline: 18rem; 
+        margin-block: 5rem; 
+    } */
+    
+    .hero-action svg {
+        transform: translateX(0%) translateY(-10%);
+        inline-size: 25rem;
+        block-size: 45rem; 
+    }
+}
+
+
+@media screen and (min-width: 2560px) {
+    .hero-action svg {
+        transform: translateX(0%) translateY(55%);
+        inline-size: 25rem;
+        block-size: 45rem; 
+    }
+}

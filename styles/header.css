@@ -1,0 +1,54 @@
+.header-panel {
+    position: relative;
+}
+
+.header { 
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+}
+
+.static-menu {
+    display: none;
+}
+
+.header-action .is-primary {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .header .button.is-img{
+        inline-size: 4rem;
+        block-size: 4rem;       
+    }
+    
+    .static-menu {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .static-menu a {
+        cursor: pointer;
+        text-align: center;
+        font: var(--firsttext);
+        align-self: center; 
+    }
+
+    .header-toggle {
+        display: none;
+    }
+
+    .header-action {
+        inline-size: 10rem; 
+    }
+    
+    .header-action .is-primary {
+        display: inline-block;
+    }
+}
+
+
+
+

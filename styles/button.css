@@ -1,0 +1,57 @@
+.button {
+    border: 1px solid transparent;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font: var(--button);
+    background: transparent;
+    color: var(--primary);
+    cursor: pointer;
+    border-radius: 5rem;
+    padding-block: 1rem;  
+    text-align: center;
+}
+
+.button:active {
+    transform: scale(.95);
+}
+
+.button.is-bordered {
+    border: 1px solid var(--primary);
+/*     max-inline-size: 22rem; */
+    inline-size: 100%; 
+}
+
+.button.is-primary {
+    background: var(--primary);
+    color: var(--lighttext);
+/*     max-inline-size: 22rem; */
+    inline-size: 100%; 
+}
+
+.button.is-base{
+    color: var(--darkbackground);
+    background: var(--lightbackground);
+   /*  max-inline-size: 22rem; */
+    inline-size: 100%; 
+}
+
+.button.is-img img{
+    vertical-align: middle;  
+    display: inline-block;
+    inline-size: 100%;
+    block-size: 100%;    
+}
+
+.button.is-img { 
+    border-radius: 0;
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+    padding: 0;
+}
+
+.button.is-img.is-social{
+    inline-size: 3.125rem;
+    block-size: 3.125rem;
+}

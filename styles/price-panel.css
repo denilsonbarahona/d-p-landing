@@ -1,0 +1,48 @@
+.PricePanel {
+    background: var(--darkbackground);
+    padding-block-start: 4rem;
+}
+
+.PricePanel .subHeading-text ,
+.PricePanel .subHeading-text p{
+    color: var(--lighttext);
+}
+
+
+.PricePanel-price {
+    color: var(--secondary-1);
+    font: var(--headline);
+    /* font-size:  3rem;
+    line-height: 3.5rem; */
+    position: relative;
+}
+
+.PricePanel-price span {
+    font: var(--subtitle);
+    color: var(--lighttext);
+    position: absolute;
+    margin-block-start: .5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .PricePanel { 
+       display: flex;
+       gap: 10rem;
+       flex-direction: row;
+       justify-content: center;
+    } 
+
+    .PricePanel .subHeading-action {      
+        flex-direction: column;
+    }
+
+    .PricePanel .subHeading-action >*{
+        margin: 0;
+    }
+
+    .PricePanel .subHeading-text ,
+    .PricePanel .subHeading-text p{
+        color: var(--lighttext);
+        text-align: start;
+    }
+}
